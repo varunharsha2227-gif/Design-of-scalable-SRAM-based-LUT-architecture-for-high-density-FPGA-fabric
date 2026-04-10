@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FPGA LUT Project</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0b1e3c, #1b3a73);
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00c3ff;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 120px 20px 60px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #00c3ff;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* SECTION */
+section {
+    padding: 40px;
+    margin: 20px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #00c3ff;
+    margin-bottom: 15px;
+}
+
+/* CARD LAYOUT */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #162f5c;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #00c3ff;
+    color: black;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: #00c3ff;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    margin-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#intro">Intro</a>
+    <a href="#objective">Objectives</a>
+    <a href="#method">Methodology</a>
+    <a href="#results">Results</a>
+    <a href="#files">Files</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>Scalable SRAM-Based LUT Architecture</h1>
+    <p>High-Density FPGA Fabric Design</p>
+</header>
+
+<!-- INTRO -->
+<section id="intro">
+    <h2>📌 Introduction</h2>
+    <p>
+        FPGA is a reconfigurable hardware device used for digital systems. 
+        LUT is the fundamental building block. This project designs a scalable 
+        SRAM-based LUT architecture to improve performance and efficiency.
+    </p>
+</section>
+
+<!-- OBJECTIVES -->
+<section id="objective">
+    <h2>🎯 Objectives</h2>
+    <div class="cards">
+        <div class="card">Design scalable LUT</div>
+        <div class="card">Improve speed</div>
+        <div class="card">Reduce power</div>
+        <div class="card">Increase utilization</div>
+    </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section id="method">
+    <h2>⚙️ Methodology</h2>
+    <div class="cards">
+        <div class="card">SRAM stores logic</div>
+        <div class="card">MUX selects output</div>
+        <div class="card">Hierarchical design</div>
+        <div class="card">Fracturable LUT</div>
+    </div>
+</section>
+
+<!-- RESULTS -->
+<section id="results">
+    <h2>📊 Results</h2>
+    <ul>
+        <li>Delay reduced by ~25–30%</li>
+        <li>Power reduced by ~20–25%</li>
+        <li>Logic utilization increased by ~30%</li>
+        <li>Improved scalability</li>
+    </ul>
+</section>
+
+<!-- FILES -->
+<section id="files">
+    <h2>📥 Project Files</h2>
+    <a href="report.pdf" class="btn">Download Report</a>
+    <a href="ppt.pdf" class="btn">Download PPT</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 FPGA LUT Project | ECE Department</p>
+</footer>
+
+</body>
+</html>
